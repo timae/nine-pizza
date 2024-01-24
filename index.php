@@ -46,6 +46,12 @@
             </div>
         </nav>
 
+        <!-- Introduction -->
+        <div class="alert alert-info" role="alert">
+            Welcome to the Pizza-dough Calculator! Craft the perfect pizza dough tailored to your preferences. Follow the
+            steps below to create the foundation for your Italian culinary dreams.
+        </div>
+
         <!-- DateTime Picker -->
         <div class="row g-3 align-items-center timeModule">
             <!-- ... (DateTime Picker HTML) ... -->
@@ -55,26 +61,35 @@
             <!-- Portions, Portion size, Hydration HTML -->
         </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="alert alert-warning" id="portion-warning" role="alert">
-                    The poolish amount of 300:300 is ideal for portions up to 12. For more portions, I recommend splitting
-                    the recipe in 2 or more!
-                </div>
-            </div>
+        <!-- Reminder for Poolish Ideal Amount -->
+        <div class="alert alert-warning" role="alert">
+            <strong>Important Tip:</strong> The poolish amount of 300:300 is ideal for portions up to 12. For more
+            portions, consider splitting the recipe into 2 or more batches for optimal results.
         </div>
 
+        <!-- Final Result Display -->
         <div class="row">
             <h2 class="">Final Result:</h2>
             <!-- ... (Final Result HTML) ... -->
         </div>
 
-        <div class="row">
+        <!-- Poolish Explanation -->
+        <div class="alert alert-success" role="alert">
             <h2 class="gy-5">Step 1 - Make the poolish:</h2>
+            <p>
+                Begin the journey by creating the foundation of your pizza dough - the poolish. Poolish is a pre-ferment
+                that adds flavor and texture to your dough. It's a mixture of flour, water, yeast, and honey left to
+                ferment.
+            </p>
+            <p>
+                Follow the checklist below to guide you through the process of making a perfect poolish, enhancing the
+                flavor profile of your pizza dough.
+            </p>
             <p class="timeModule" id="labelDateTimeToStart"></p>
             <!-- ... (Step 1 HTML) ... -->
         </div>
 
+        <!-- Checklist for Poolish Steps -->
         <div class="row gy-1">
             <div class="col">
                 <ul class="list-group">
@@ -83,20 +98,36 @@
             </div>
         </div>
 
-        <div class="row">
+        <!-- Final Mix Information -->
+        <div class="alert alert-success" role="alert">
             <h2 class="gy-5">Step 2 - Final Mix:</h2>
+            <p>
+                It's time to bring your pizza dough to life! In this step, you'll finalize the mix by adding remaining
+                ingredients to the fermented poolish. This step is crucial for achieving the perfect texture and taste in
+                your dough.
+            </p>
+            <p>
+                Follow the checklist below and pay attention to the recommended time to start based on your planned
+                eating time.
+            </p>
             <p class="timeModule" id="labelStep2DateTime"></p>
             <ul class="list-group">
                 <!-- ... (Step 2 Checklist) ... -->
             </ul>
         </div>
 
+        <!-- Remaining Flour, Water, Salt Display -->
         <div class="row gy-1">
             <!-- ... (Remaining Flour, Water, Salt HTML) ... -->
         </div>
 
-        <div class="row">
+        <!-- Final Steps Information -->
+        <div class="alert alert-success" role="alert">
             <h2 class="gy-5">Final Steps:</h2>
+            <p>
+                You're almost there! The final steps will guide you through shaping, resting, and baking your pizza
+                dough. Follow the checklist below to ensure you achieve the desired characteristics in your dough.
+            </p>
             <div class="col">
                 <ul class="list-group">
                     <!-- ... (Final Steps Checklist) ... -->
@@ -104,6 +135,7 @@
             </div>
         </div>
 
+        <!-- Footer Section -->
         <style>
             .footer__col {
                 display: flex;
@@ -137,6 +169,15 @@
         </div>
 
     </div> <!-- container -->
+
+    <script>
+        // ... (JavaScript code remains the same) ...
+    </script>
+
+</body>
+
+</html>
+
 
     <script>
 function refresh_data() {
